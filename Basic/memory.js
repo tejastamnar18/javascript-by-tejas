@@ -10,8 +10,8 @@ let myname="Tejas"; // Primitive type stored in stack
 
 let anotherName = myname; // Copying value, anotherName is also a primitive type stored in stack
 anotherName = "John"; // Changing anotherName does not affect myname
-console.log(myname);
-console.log(anotherName); 
+console.log(myname);// Output: Tejas
+console.log(anotherName); // Output: John
 
 
 let personOne = {
