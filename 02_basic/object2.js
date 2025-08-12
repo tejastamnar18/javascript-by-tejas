@@ -30,18 +30,18 @@ const obj2 = {
 
 //const obj3 = {obj1, obj2};
 const obj3 = Object.assign({}, obj1, obj2);
-console.log(obj3); 
+//console.log(obj3); 
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser)); // ['id', 'name', 'isLoggedIn']
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser)); // [['id', '12345'], ['name', 'Tejas'], ['isLoggedIn', false]]
+//console.log(tinderUser);
+//console.log(Object.keys(tinderUser)); // ['id', 'name', 'isLoggedIn']
+//console.log(Object.values(tinderUser));
+//console.log(Object.entries(tinderUser)); // [['id', '12345'], ['name', 'Tejas'], ['isLoggedIn', false]]
 
 // Object.keys() returns an array of the object's own enumerable property names.
 // Object.values() returns an array of the object's own enumerable property values.
 // Object.entries() returns an array of the object's own enumerable string-keyed property [key, value] pairs.
 
-console.log(Object.hasOwn(tinderUser, 'name')); // true
+//console.log(Object.hasOwn(tinderUser, 'name')); // true
 // Object.hasOwn() checks if the object has the specified property as its own property (not inherited).
 
 // notes 
@@ -50,11 +50,53 @@ console.log(Object.hasOwn(tinderUser, 'name')); // true
 // 3. The `this` keyword refers to the object itself within its methods.
 // 4. Symbols can be used as unique property keys to avoid name collisions.
 
-// Example of using a Symbol as a property key
-const mySymbol = Symbol("uniqueKey");
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+
+const course = {
+    name: "JavaScript Basics",
+    duration: "4 weeks",
+    price : 199
+}
+
+//course.isAvailable = true; // Adding a new property
+
+const{name: cname} = course
+
+console.log(cname); // JavaScript Basics
+
+// const navbar = ({company}) => {
+
+// }
+
+
+// {
+//     "name" : "Tejas",
+//     "age" : 21,
+//     "location" : "India"
+// }
+
+
+
+
+
+//   inter view question
+// 1. How do you create an object in JavaScript?
+// 2. What is the difference between an object literal and a constructor function?
+// 3. How can you add a new property to an existing object?
+// 4. What is the purpose of the `this` keyword in object methods?
+// 5. How do you check if an object has a specific property?
+
+// Example of using Symbols in objects
+const mySymbol = Symbol("key1");
+
 const myObj = {
-    [mySymbol]: "This is a unique value"
-};
+    name: "Tejas",
+    age: 21,
+    location: "India",
+    isLoginIn: false,
+    [mySymbol]: "value1",
+}
 
-
-
+console.log(myObj.name);
