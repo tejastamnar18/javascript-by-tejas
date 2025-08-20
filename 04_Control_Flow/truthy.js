@@ -23,3 +23,26 @@ else {
 
 // Falsy values in JavaScript
 // 0, "", null, undefined, NaN, false,0n,-0
+
+
+let val1;
+val1 = 5??10
+//console.log(val1); // 5
+
+val1 = null??10
+//console.log(val1); // 10
+
+val1 = undefined??15
+//console.log(val1); // 15
+
+val1 = null ?? 10 ?? 20 //nullish coalescing operator
+console.log(val1); // 10
+
+
+
+//!ternary operator
+
+// Syntax : condition ? true : false;
+
+const iceTeaPrice = 90;
+iceTeaPrice < 100 ? console.log("Ice tea is affordable") : console.log("Ice tea is expensive");
