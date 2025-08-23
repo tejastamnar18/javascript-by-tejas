@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414144;">
+        <h2>Amazing Images</h2>
+        <div>
+            <ul id="images">
+                <li><img id="owl" height="200px" src="https://cdn.pixabay.com/photo/2023/04/07/07/14/cat-7905702_1280.jpg" alt=""></li>
+                <li><img height="200px" src="https://media.istockphoto.com/id/495381097/photo/portrait-of-beautiful-white-burmilla-looking-up-black-background.jpg?s=1024x1024&w=is&k=20&c=37gQLYsEOTA2Og5zq_yo8VgYc0uBdLSWCrR1__Jq6s8=" alt=""></li>
+                <li><a id="google" href="https://google.com">Google</a></li>
+            </ul>
+        </div>
+</body>
+<script>
+    //attachEvent()
+    //jQuery - OnEventListener
+    //type, timestamp, defaultPrevented
+    //target, toElement, srcElement, currentTarget
+    //clientX, clientY, screenX, screenY
+    //altKey, ctrlKey, shiftKey, keyCode
+    // document.getElementById('owl').onclick = function(){
+    //     alert("owl clicked")
+    // }
+    // document.getElementById('images').addEventListener('click' , function(e){
+    //     console.log("clicked inside the ul");
+    // }, false)
+    // document.getElementById('owl').addEventListener('click' , function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation()
+    // }, false)
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault()
+    //     console.log("google clicked");
+
+    // },false)
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id)
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+        
+        // removeIt.parentNode.removeChild(removeIt)
+    })
+</script>
+</html>
