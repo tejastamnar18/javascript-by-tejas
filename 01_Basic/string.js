@@ -38,23 +38,7 @@ console.log(url.includes('tejas')); // false
 
 console.log(gameName.split("-")); // [ 'Cric', 'ket' ]
 
-//string are used to represent text in JavaScript
-//they are immutable, meaning once created, they cannot be changed
-//you can create a string using single quotes, double quotes, or backticks
-//backticks allow for template literals, which can include variables and expressions
-//strings have many built-in methods for manipulation and inspection
-//common methods include toUpperCase(), toLowerCase(), indexOf(), substring(), slice(), trim(), replace(), includes(), split()
 
-//String.prototype is the prototype object for all string objects
-//it contains methods and properties that are available to all string instances
-//you can access the prototype object using String.prototype
-//you can also create your own string objects using the String constructor
-//but it's generally recommended to use string literals instead of creating new String objects
-//string literals are more efficient and easier to read
-//you can also use string interpolation with template literals to create dynamic strings
-//template literals are enclosed in backticks and can include variables and expressions using ${}
-//this allows for more readable and maintainable code when working with strings
-//you can also use string methods to manipulate and inspect strings
 //for example, you can use toUpperCase() to convert a string to uppercase, or indexOf() to find the position of a substring
 
 
