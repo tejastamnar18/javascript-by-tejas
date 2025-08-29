@@ -51,12 +51,3 @@ console.log(typeof greet); // Output: function
 let currentDate = new Date();
 console.log(typeof currentDate); // Output: object
 
-
-
-// Summary
-// Primitive types are immutable and passed by value, while non-primitive types are mutable and passed by reference.
-
-//there are 7 primitive data types and many non-primitive data types in JavaScript.
-
-// Note: The typeof operator returns "object" for null, which is a known quirk in JavaScript.
-
