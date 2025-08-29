@@ -4,7 +4,7 @@ var accountPassword = "tejas123"
 accountCity = "Mumbai"
 
 
-// accountID = 2 not allowed
+// accountID = 2 not allowed 
 
 console.log(accountID)
 accountEmail = "te@gamil.com"
